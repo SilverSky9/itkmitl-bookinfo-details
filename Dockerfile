@@ -1,7 +1,6 @@
-FROM ruby:3.0.2-slim-bullseye
+FROM ruby:2.7.4-slim-buster
 
-WORKDIR /usr/src/app
-
+WORKDIR /usr/src/app0
 COPY src/ /usr/src/app/
 RUN gem install webrick
 

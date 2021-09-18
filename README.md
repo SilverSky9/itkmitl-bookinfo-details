@@ -1,12 +1,9 @@
-# How to run details service
-
-## Prerequisite
-
-* Ruby 2.7
+## How to run with Docker
 
 ```bash
-ruby details.rb 9080
-```
+# Build Dcoker Image for detail service
+docker build -t details .
 
-# itkmitl-bookinfo-details
-It's a part of DevOps subject in ITKMITL
+#Run details.rb
+docker run -d -p 8081:9080 details
+```
