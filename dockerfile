@@ -3,7 +3,8 @@ FROM ruby:3.0.2-slim-bullseye
 WORKDIR /usr/src/app
 
 COPY src/ /usr/src/app/
+RUN gem install webrick
 
-EXPOSE 8081
+EXPOSE 9080
 
-CMD ["/usr/src/details.rb", "8081"]
+CMD ["ruby" , "details.rb", "9080"]
