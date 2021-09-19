@@ -2,8 +2,8 @@
 
 ```bash
 # Build Dcoker Image for detail service
-docker build -t details .
+docker build -t details $(pwd)/itkmitl-bookinfo-details
 
-#Run details.rb
-docker run -d -p 8081:9080 details
+#Run details service on port 8081
+docker run -d --rm --name details-service -p 8081:9080 details
 ```
