@@ -1,6 +1,6 @@
 services:
-  details:
+  details-service:
     build: .
-    image: ghcr.io/silversky9/details-services:dev
+    image: ghcr.io/silversky9/details-service:dev
     ports:
       - "8081:9080"
